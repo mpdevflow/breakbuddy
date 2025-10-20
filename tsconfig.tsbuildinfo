@@ -1,1 +1,32 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/components/layout/applayout.tsx","./src/components/mood/moodtrackermodal.tsx","./src/pages/dashboard.tsx","./src/pages/history.tsx","./src/pages/landing.tsx","./src/pages/notfound.tsx","./src/services/geminiclient.ts","./src/store/usefocustimer.ts","./src/types/mood.ts"],"version":"5.9.3"}
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/main.tsx",
+    "./src/components/dashboard/breakgatemodal.tsx",
+    "./src/components/dashboard/dashboardchips.tsx",
+    "./src/components/dashboard/statspanel.tsx",
+    "./src/components/dashboard/suggestionmodal.tsx",
+    "./src/components/dashboard/timerpanel.tsx",
+    "./src/components/layout/applayout.tsx",
+    "./src/components/mood/moodtrackermodal.tsx",
+    "./src/pages/dashboard.tsx",
+    "./src/pages/history.tsx",
+    "./src/pages/landing.tsx",
+    "./src/pages/notfound.tsx",
+    "./src/services/geminiclient.ts",
+    "./src/store/usefocustimer.ts",
+    "./src/store/focustimer/actions.ts",
+    "./src/store/focustimer/constants.ts",
+    "./src/store/focustimer/persistence.ts",
+    "./src/store/focustimer/sanitizers.ts",
+    "./src/store/focustimer/sessiontracker.ts",
+    "./src/store/focustimer/state.ts",
+    "./src/store/focustimer/stats.ts",
+    "./src/store/focustimer/subscriptions.ts",
+    "./src/store/focustimer/ticker.ts",
+    "./src/store/focustimer/types.ts",
+    "./src/types/mood.ts",
+    "./src/utils/formatminutes.ts"
+  ],
+  "version": "5.9.3"
+}

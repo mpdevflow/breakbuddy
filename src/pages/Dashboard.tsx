@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import MoodTrackerModal from '../components/mood/MoodTrackerModal.tsx'
 import { useFocusTimer } from '../store/useFocusTimer.ts'
+import { formatMinutes } from '../utils/formatMinutes.ts'
 
 const PHASE_COPY = {
   focus: {
@@ -71,9 +72,6 @@ const formatClock = (seconds: number) => {
     .padStart(2, '0')
   return `${mins}:${secs}`
 }
-
-const formatMinutes = (seconds: number) =>
-  (seconds / 60).toFixed(1).replace(/\.0$/, '')
 
 function Dashboard() {
   const {
