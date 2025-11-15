@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import Logo from '/neon-coffee.svg'
 
 const navLinkClass =
   'relative px-4 py-2 text-xs sm:text-sm font-medium uppercase tracking-[0.35em] transition-colors duration-200'
@@ -19,7 +20,7 @@ function AppLayout() {
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-5 py-6 sm:px-6">
           <div className="flex items-center gap-3">
             <img
-              src="/src/assets/neon-coffee.svg"
+              src={Logo}
               alt="BreakBuddy neon coffee mug"
               className="h-10 w-10 drop-shadow-[0_0_6px_rgba(255,0,110,0.6)] transition-transform duration-300 hover:scale-105"
             />
