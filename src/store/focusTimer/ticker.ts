@@ -1,4 +1,3 @@
-import { upsertWeeklyStats, formatDayKey } from './stats.ts'
 import {
   createSessionId,
   getActiveSessionId,
@@ -6,6 +5,7 @@ import {
   setActiveSessionId,
   setLastLoggedSessionId,
 } from './sessionTracker.ts'
+import { formatDayKey, upsertWeeklyStats } from './stats.ts'
 import type { FocusTimerState, SessionHistoryEntry } from './types.ts'
 
 type StateSetter = (
@@ -182,7 +182,6 @@ export const startTicker = (set: StateSetter) => {
           )
           phase = 'focus'
           secondsRemaining = durations.focus
-          cycleStreak = state.cycleStreak
           const newSessionId = createSessionId()
           setActiveSessionId(newSessionId)
           activeId = newSessionId
